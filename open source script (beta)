@@ -152,7 +152,7 @@ local Button3 = TPTab:CreateButton({
    end,
 })
 
-local TPTab = Window:CreateTab("🎲 Misc", nil) -- Title, Image
+
 
 local Button = MainTab:CreateButton({
    Name = "Inf money",
@@ -247,8 +247,10 @@ main()
 })
 
 local Button = MainTab:CreateButton({
-   Name = "fix after Inf money",
+   Name = "Respawn",
    Callback = function()
    game.Players.LocalPlayer.Character:FindFirstChildWhichIsA 'Humanoid'.Health = 0
    end,
 })
+
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
