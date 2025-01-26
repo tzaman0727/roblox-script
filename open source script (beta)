@@ -152,9 +152,8 @@ local Button3 = TPTab:CreateButton({
    end,
 })
 
-
-
-local Button = MainTab:CreateButton({
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local Button = MiscTab:CreateButton({
    Name = "Inf money",
    Callback = function()
     local MaxSpeed = 300 -- Studs per second 380 no flag but kick
@@ -245,12 +244,9 @@ main()
 
    end,
 })
-
-local Button = MainTab:CreateButton({
+local Button = MiscTab:CreateButton({
    Name = "Respawn",
    Callback = function()
    game.Players.LocalPlayer.Character:FindFirstChildWhichIsA 'Humanoid'.Health = 0
    end,
 })
-
-local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
