@@ -234,3 +234,12 @@ local Button = MiscTab:CreateButton({
    game.Players.LocalPlayer.Character:FindFirstChildWhichIsA 'Humanoid'.Health = 0
    end,
 })
+local Button = MainTab:CreateButton({
+   Name = "farm",
+  while true do 
+game:GetService("ReplicatedStorage").Packages.Knit.Services.ToolService.RE.MewRequest:FireServer()
+wait()
+game:GetService("ReplicatedStorage").Packages.Knit.Services.ToolService.RE.onClick:FireServer()
+wait() end
+   end,
+})
